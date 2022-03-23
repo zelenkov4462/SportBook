@@ -1,0 +1,84 @@
+.modal {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    background: rgba(0,0,0,0.5);
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.5s;
+    pointer-events: none;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.myModalContent {
+    padding: 25px;
+    background: white;
+    border-radius: 16px;
+    width: 60%;
+    height: 70%;
+    /*max-width: 600px ;*/
+
+    transform: scale(0.5);
+    transition: 0.4s all;
+}
+
+.myModalContent.active {
+    transform: scale(1);
+}
+
+
+.modal.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    pointer-events: all;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-info-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    column-gap: 15px;
+
+
+
+}
+/* не могу отцентровать основную информацию в модалке*/
+.modal-info {
+    height: 300px;
+    padding-top: 100px;
+
+
+}
+
+
+.modal-input {
+    height: 30px;
+    width: 65px;
+    text-align: center;
+}
+
+.modal-input2 {
+    height: 20px;
+    width: 35px;
+    text-align: center;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: center;
+
+}
